@@ -1,0 +1,128 @@
+# تحديث النتائج مرة أخرى حسب الطلب الأخير
+# تعديل العبارة "لا يمكن التبرع للمعاقين" لتكون "لا يمكن التبرع للمعاقين فكرياً" بخط عريض
+
+html_code_final_v2 = """
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>AMMAR.xm3_</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(to bottom, #004d98, #a50044);
+            color: white;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+            background-color: rgba(0,0,0,0.4);
+        }
+        section {
+            padding: 40px 20px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: rgba(255,255,255,0.1);
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px;
+            font-size: 18px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .special-text {
+            margin-top: 50px;
+            font-size: 28px;
+            font-family: 'Cairo', sans-serif;
+            background-color: rgba(255,255,255,0.2);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 15px;
+            font-weight: bold;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        AMMAR.xm3_
+    </header>
+
+    <section>
+        <h2>نتائج مباريات برشلونة ضد ريال مدريد - موسم 2024/2025</h2>
+        <table>
+            <tr>
+                <th>المباراة</th>
+                <th>النتيجة</th>
+                <th>التاريخ</th>
+            </tr>
+            <tr>
+                <td>برشلونة × ريال مدريد (ودية)</td>
+                <td>2-1 لصالح برشلونة</td>
+                <td>12 يوليو 2024</td>
+            </tr>
+            <tr>
+                <td>برشلونة × ريال مدريد (الليغا - ذهاب)</td>
+                <td>4-0 لصالح برشلونة</td>
+                <td>28 أكتوبر 2024</td>
+            </tr>
+            <tr>
+                <td>برشلونة × ريال مدريد (نهائي كأس السوبر الإسباني)</td>
+                <td>5-2 لصالح برشلونة</td>
+                <td>14 يناير 2025</td>
+            </tr>
+            <tr>
+                <td>برشلونة × ريال مدريد (نهائي كأس الملك الإسباني)</td>
+                <td>3-2 لصالح برشلونة</td>
+                <td>15 مايو 2025</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>صور جول كوندي</h2>
+        <div class="gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Jules_Kound%C3%A9_2022.jpg" alt="كوندي 1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Jules_Kound%C3%A9.jpg" alt="كوندي 2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Jules_Kound%C3%A9_vs_Granada.jpg" alt="كوندي 3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/07/Jules_Kound%C3%A9_training.jpg" alt="كوندي 4">
+        </div>
+    </section>
+
+    <section>
+        <div class="special-text">
+            لا يمكن التبرع للمعاقين فكرياً
+        </div>
+    </section>
+</body>
+</html>
+"""
+
+# حفظ النسخة النهائية في ملف HTML
+final_file_v2_path = "/mnt/data/ammar_xm3_site_final_v2.html"
+with open(final_file_v2_path, "w", encoding="utf-8") as f:
+    f.write(html_code_final_v2)
+
+final_file_v2_pathص
